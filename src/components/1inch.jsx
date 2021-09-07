@@ -109,7 +109,7 @@ function Home(props) {
       .swapExactTokensForTokens(
         amount,
         amountOutMin,
-        [fromCurrency.address, EthTokenConAdd, toCurrency.address],
+        [fromCurrency.address, toCurrency.address],
         targetAccount,
         Math.round(Date.now() / 1000) + 60 * 20
       )
