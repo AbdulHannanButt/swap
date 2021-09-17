@@ -5,7 +5,7 @@ import { styleLight } from "../../styleLight.js";
 
 import { connect } from "react-redux";
 import { setMetaMask, deleteMetaMask, Web3Object,Web3Connected } from "../../redux/actions/web3action";
-import { blockChainConfig } from "../../constants/blockChainConfig";
+import { blockChainConfig } from "../../constants/config";
 const selectedBlockChain =
   blockChainConfig[
     sessionStorage.getItem("selectedBlockChain")

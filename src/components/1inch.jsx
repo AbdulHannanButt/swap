@@ -10,7 +10,7 @@ import {
   Web3Object,
   Web3Connected,
 } from "../redux/actions/web3action";
-import { blockChainConfig } from "../constants/blockChainConfig";
+import { blockChainConfig } from "../constants/config";
 import { divideNo, isGreater, validateInput } from "../helpers/helpers";
 
 const selectedBlockChain =
@@ -24,10 +24,8 @@ const {
   networkIdTestNet,
   networkIdMainNet,
   providerUrl,
-  uniswapConConfig: { add: UniSwapConAdd },
-  uniswapConConfig: { abi: UniSwapConAbi },
-  uniswapTokenConConfig: { add: UniSwapTokenConAdd },
-  uniswapTokenConConfig: { abi: UniSwapTokenConAbi },
+  oneinchConConfig: { add: UniSwapConAdd },
+  oneinchConConfig: { abi: UniSwapConAbi },
   ethTokenConConfig: { add: EthTokenConAdd },
   ethTokenConConfig: { abi: EthTokenConAbi },
 } = selectedBlockChain;

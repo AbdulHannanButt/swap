@@ -1,4 +1,4 @@
-import { blockChainConfig } from "../constants/blockChainConfig";
+import { blockChainConfig } from "../constants/config";
 const selectedBlockChain =
   blockChainConfig[
     sessionStorage.getItem("selectedBlockChain")
@@ -9,6 +9,8 @@ const selectedBlockChain =
 const {
   uniswapTokenConConfig: { add: UniSwapTokenConAdd },
   uniswapTokenConConfig: { abi: UniSwapTokenConAbi },
+  oneinchTokenConConfig: { add: OneinchTokenConAdd },
+  oneinchTokenConConfig: { abi: OneinchTokenConAbi },
   daiTokenConConfig: { add: DaiTokenConAdd },
   daiTokenConConfig: { abi: DaiTokenConAbi },
   ethTokenConConfig: { add: EthTokenConAdd },
@@ -37,4 +39,11 @@ export const tokens = [
     address: DaiTokenConAdd,
     abi: DaiTokenConAbi,
   },
+  // {
+  //   value: "1inch",
+  //   imageSrc: "img/usdtc-input-ic.svg",
+  //   key: "1inch",
+  //   address: OneinchTokenConAdd,
+  //   abi: OneinchTokenConAbi,
+  // },
 ];
