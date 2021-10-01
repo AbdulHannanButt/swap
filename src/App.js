@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./components/home";
 import OneInch from "./components/1inch";
 import UniSwap from "./components/uniSwap";
+import QuickSwap from "./components/quickSwap";
 
 import ScrollToTop from "./components/commonComponents/scrollToTop";
 import { ToastContainer } from "react-toastify";
@@ -72,6 +73,7 @@ const dispatch= useDispatch()
           <Route exact path="/gojiswap" component={Home} />
           <Route exact path="/1inch" component={OneInch} />
           <Route exact path="/uniswap" component={UniSwap} />
+          <Route exact path="/quickswap" component={QuickSwap} />
         </Switch>
         <ScrollToTop />
       </Router>

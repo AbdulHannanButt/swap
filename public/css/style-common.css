@@ -330,6 +330,13 @@ body{font-family: 'Axiforma';}
 .sushiswap .form-btn .theme-btn{background: linear-gradient(114.87deg, #0F90EB 15.84%, #DE41C7 84.16%); max-width: 328px;}
 .sushiswap .gradient{width: 100%; height: 100%}
 
+.quickswap .swipe-btn svg path{fill:#0F90EB}
+.quickswap .form-btn{text-align: center}
+.quickswap .form-btn .theme-btn{background: #2172E5; max-width: 328px;}
+.quickswap .gradient{width: 100%; height: 100%}
+
+
+
 
 .gojiswap .swapper .nav-item a.active,
 .gojiswap .swapper .nav-item a:hover{background: -webkit-linear-gradient(#8DC33F, #00A7A7) !important; font-weight: 800;
@@ -347,9 +354,14 @@ body{font-family: 'Axiforma';}
 .sushiswap .swapper .nav-item a:hover{background: -webkit-linear-gradient(#0F90EB, #DE41C7) !important; font-weight: 800;
   -webkit-background-clip: text  !important; -webkit-text-fill-color: transparent  !important; border: none !important}
 
+.quickswap .swapper .nav-item a.active,
+.quickswap .swapper .nav-item a:hover{background: -webkit-linear-gradient(#2172E5, #2172E5) !important; font-weight: 800;
+  -webkit-background-clip: text  !important; -webkit-text-fill-color: transparent  !important; border: none !important}
+
 @media(min-width:1024px){
     .oneinch .swapper{min-width: 870px;}
     .sushiswap .swapper{min-width: 870px;}
+    .quickswap .swapper{min-width: 870px;}
 }
 
 @media (min-width:769px){

@@ -1,4 +1,4 @@
-export const styleLight = `body{background: #fff}
+body{background: #fff}
 .theme-toggle svg path{fill:#353635}
 .theme-toggle svg line{stroke:#353635}
 .c-t-wallet svg path{ fill:#353635}
@@ -25,4 +25,4 @@ path.p{fill:#353635}
 
 .watermark.uniswap path{fill:#624A5D}
 .footer-line span{color: #717171}
-.footer-line svg path{fill: #717171}`;
+.footer-line svg path{fill: #717171}
