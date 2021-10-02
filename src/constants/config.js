@@ -1,10 +1,18 @@
+//Set networkType from here (Default testnet)
 export const networkType = "testnet";
 // const networkType = 'mainnet'
 
 export const config = {
+
+  /*
+  -------------------------------------------------------------------------------------------------------------------------------------
+  Dai Token start
+  */
+
   DAI_TOKEN: {
-    addTestNet: "0xc7AD46e0b8a400Bb3C915120d284AafbA8fc4735",
-    addMainNet: "0xc7AD46e0b8a400Bb3C915120d284AafbA8fc4735",
+    addTestNet: "0xc7AD46e0b8a400Bb3C915120d284AafbA8fc4735", // testnet address
+    addMainNet: "0xc7AD46e0b8a400Bb3C915120d284AafbA8fc4735", // mainnet address
+    // testnet ABI
     abiTestNet: [
       {
         inputs: [
@@ -338,6 +346,9 @@ export const config = {
         type: "function",
       },
     ],
+
+    // mainnet abi
+
     abiMainNet: [
       {
         inputs: [
@@ -672,17 +683,28 @@ export const config = {
       },
     ],
   },
-
+/*
+DAI Token END
+---------------------------------------------------------------------------------------------------------------------------------------
+WEth Token Start
+*/ 
   ETH_TOKEN: {
-    addTestNet: "0xc778417E063141139Fce010982780140Aa0cD5Ab",
-    addMainNet: "0xc778417E063141139Fce010982780140Aa0cD5Ab",
+    addTestNet: "0xc778417E063141139Fce010982780140Aa0cD5Ab", // testnet address of WEthToken
+    addMainNet: "0xc778417E063141139Fce010982780140Aa0cD5Ab", // mainnet address of WEthToken
     abiTestNet: [],
     abiMainNet: [],
   },
 
-  UNI_TOKEN: {
-    addTestNet: "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
-    addMainNet: "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
+/*
+WEth Token END
+---------------------------------------------------------------------------------------------------------------------------------------
+UNI Token Start
+*/ 
+
+UNI_TOKEN: {
+    addTestNet: "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984", // testnet address of UNIToken
+    addMainNet: "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984", // mainnet address of UNIToken
+    //testnet ABI
     abiTestNet: [
       {
         inputs: [
@@ -1103,6 +1125,9 @@ export const config = {
         type: "function",
       },
     ],
+
+    //ABI Mainnet
+    
     abiMainNet: [
       {
         inputs: [
@@ -1524,10 +1549,16 @@ export const config = {
       },
     ],
   },
+/*
+UNI Token END
+---------------------------------------------------------------------------------------------------------------------------------------
+OneInch Token Start
+*/ 
 
   ONEINCH_TOKEN: {
-    addTestNet: "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
-    addMainNet: "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
+    addTestNet: "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984", // oneInch token address of testnet
+    addMainNet: "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984", // oneInch token address of mainnet
+    // testnet abi
     abiTestNet: [
       {
         inputs: [
@@ -1948,6 +1979,9 @@ export const config = {
         type: "function",
       },
     ],
+
+    //ABI mainnet 
+
     abiMainNet: [
       {
         inputs: [
@@ -2370,9 +2404,18 @@ export const config = {
     ],
   },
 
-  UNISWAP_CON: {
-    addTestNet: "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D",
-    addMainNet: "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D",
+  /*
+Token Config end
+---------------------------------------------------------------------------------------------------------------------------------------
+Connection with chain config started
+
+UNISwap connection
+*/ 
+
+UNISWAP_CON: {
+    addTestNet: "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D", //testnet routing contract uniswap
+    addMainNet: "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D", //mainnet routing contract uniswap
+   //abi testnet
     abiTestNet: [
       {
         inputs: [
@@ -2743,6 +2786,9 @@ export const config = {
       },
       { stateMutability: "payable", type: "receive" },
     ],
+
+    //mainnet ABI
+
     abiMainNet: [
       {
         inputs: [
@@ -3114,10 +3160,17 @@ export const config = {
       { stateMutability: "payable", type: "receive" },
     ],
   },
+
+/*
+UNISwap connection END
+---------------------------------------------------------------------------------------------------------------------------------------
+OneInch connection Started
+*/ 
 
   ONEINCH_CON: {
-    addTestNet: "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D",
-    addMainNet: "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D",
+    addTestNet: "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D",//testnet routing contract for one inch
+    addMainNet: "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D",//mainnet routing contract for one inch
+   //abi testnet
     abiTestNet: [
       {
         inputs: [
@@ -3488,6 +3541,9 @@ export const config = {
       },
       { stateMutability: "payable", type: "receive" },
     ],
+
+    //abi mainnet
+
     abiMainNet: [
       {
         inputs: [
@@ -3860,9 +3916,16 @@ export const config = {
     ],
   },
 
+/*
+OneInch connection END
+---------------------------------------------------------------------------------------------------------------------------------------
+QuickSwap connection Started
+*/ 
+  
   QUICKSWAP_CON: {
-    addTestNet: "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D",
-    addMainNet: "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D",
+    addTestNet: "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D", //testnet address for quickswap
+    addMainNet: "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D", //mainnet address for quickswap
+    //abi testnet
     abiTestNet: [
       {
         inputs: [
@@ -4233,6 +4296,9 @@ export const config = {
       },
       { stateMutability: "payable", type: "receive" },
     ],
+    
+    //abi Mainnet
+
     abiMainNet: [
       {
         inputs: [
@@ -4606,18 +4672,25 @@ export const config = {
   },
 };
 
+/*
+Token and Routing config end
+---------------------------------------------------------------------------------------------------------------------------------------
+Chain configuration Started
+*/
+
+
 export const blockChainConfig = [
   {
     name: "Etherium",
     key: "etherium",
-    networkIdTestNet: networkType === "testnet" ? "4" : "4",
-    networkIdMainNet: networkType === "testnet" ? "4" : "4",
+    networkIdTestNet: networkType === "testnet" ? "4" : "4", // networkId set after "4": for mainnet  
+    networkIdMainNet: networkType === "testnet" ? "4" : "4", // networkId set after "4": for mainnet 
     providerUrl:
       networkType === "testnet"
-        ? "https://rinkeby.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161"
-        : "https://rinkeby.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161",
+        ? "https://rinkeby.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161" //CHANGE HERE ACORDING TO PROVIDER right now Rinkeby
+        : "https://rinkeby.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161", //CHANGE HERE ACORDING TO PROVIDER right now Rinkeby
     providerUrlForMainnet:
-      "https://rinkeby.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161",
+      "https://rinkeby.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161",    //CHANGE HERE ACORDING TO PROVIDER right now Rinkeby
 
     daiTokenConConfig: {
       add:
