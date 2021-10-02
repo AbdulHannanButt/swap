@@ -72,6 +72,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 **Note: This portion explains how to change configuration of whole project**
+
 First of all in **src** folder there is folder of **constants** and in that there is file of **config.js** which have all the commenting and configuration of whole system
 
 For testnet purposes this project is using **Rinkeby Network** with **uni, dai, weth** token of this configuration and routing contract of **uniswap**
